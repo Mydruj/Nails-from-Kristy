@@ -1,12 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Static Template</title>
   </head>
   <body>
-    <h1>This is a static template, there is no bundler or bundling involved!</h1>
+    <header>
+      <nav><a href="form.html">Form</a></nav>
+      <h1>
+        <b><i>Привіт!!!</i> Мене звати Антон</b>
+      </h1>
+    </header>
+    <p>Я пробуватиму використовувати різні теги HTML</p>
+    <main>
+      <p>1.</p>
+      <h2><b> Спочатку я вставлю посилання на Facebook</b></h2>
+      <a href="https://www.facebook.com/"><i>Facebook</i></a>
+      <p>2.</p>
+      <h2>
+        Тепер виставлю зображення <b>Дивакуватого</b>, на мій погляд,
+        <b>КОТА</b>...
+      </h2>
+      <figure>
+        <img src="img/grumpy.jpg" alt="Grumpy Cat" width="100" height="125" />
+        <figcaption>КОТЯРА розміром 100 на 125</figcaption>
+      </figure>
+      <p>3.</p>
+      <figure>
+        <img src="img/grumpy.jpg" alt="Grumpy Cat" width="100" height="125" />
+        <img src="img/british.jpg" alt="British Cat" width="150" height="125" />
+        <figcaption>Але порівняйте цього злого і цього КРАСЕННЯ</figcaption>
+      </figure>
+      <h2>
+        <b
+          >Тепер я ще й вмію закидати класний відос з ЮтУбА. Дякую Youtube за
+          готовий код для вставки відео &#128526; (і цей смайл взяв
+          <a href="http://modx-gu.ru/html-codes/emoji"><i>ТУТ</i>)</a></b
+        >
+      </h2>
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/5qHfyk3VTvM"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <br />
+      <h2><b>Таблицю робив сам, а дані взяв з інету </b></h2>
+      <table border="1">
+        <caption>
+          <i>Як клієнти Monobank користуються Uber, Uklon, Taxify</i>
+        </caption>
+        <tr>
+          <th>Назва компанії</th>
+          <th>
+            <img
+              src="img/uber.jpg"
+              alt="Uber"
+              width="35"
+              height="35"
+              align="center"
+            />Uber
+          </th>
+          <th>
+            <img
+              src="img/uklon.jpg"
+              alt="Uklon"
+              width="35"
+              height="35"
+              align="center"
+            />Uklon
+          </th>
+          <th>
+            <img
+              src="img/taxify.jpg"
+              alt="Uber"
+              width="35"
+              height="35"
+              align="center"
+            />Taxify
+          </th>
+        </tr>
+        <tr>
+          <td>К-сть платежів</td>
+          <td>306 &#8372;</td>
+          <td>145 &#8372;</td>
+          <td>78 &#8372;</td>
+        </tr>
+        <tr>
+          <td>Середній показник</td>
+          <td>105 &#8372;</td>
+          <td>102 &#8372;</td>
+          <td>86 &#8372;</td>
+        </tr>
+      </table>
+    </main>
+    <footer>
+      <h2><b>Ну що, пишіть мені сюда, якщо щось &#128521;</b></h2>
+      <form method="POST" action="https://formspree.io/Mydruj@meta.ua">
+        <label
+          >User Name:
+          <input type="text" placeholder="User Name" name="user-name" />
+        </label>
+        <br />
+        <label for="email-input">User Email:</label>
+        <input type="email" name="user-email" id="email-input" /> <br />
+        <label>Gender:</label> <br />
+        <label> <input type="radio" name="gender" value="male" />Male</label>
+        <label>
+          <input type="radio" name="gender" value="female" />Female</label
+        >
+        <br />
+        <input type="submit" value="SEND" />
+      </form>
+    </footer>
   </body>
 </html>
